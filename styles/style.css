@@ -1,7 +1,11 @@
-html,
+/* html,
 body {
 	max-width: 100%;
 	overflow-x: hidden;
+} */
+
+html {
+	scroll-behavior: smooth;
 }
 
 .carousel {
@@ -18,11 +22,12 @@ body {
 }
 
 .navbar {
-	padding-bottom: 3vh;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .transparent {
 	background-image: none;
-	background-color: rgba(255, 255, 255, 0.274);
+	background-color: rgba(36, 36, 36, 0.575);
 	backdrop-filter: blur(10px);
 }
 
@@ -31,6 +36,12 @@ body {
 	z-index: 0;
 	pointer-events: all;
 }
+.navbar .container-fluid .navbar-brand img {
+	height: 55px;
+	padding: 0 0;
+	margin: 0 0;
+}
+
 main {
 	background-color: white;
 	z-index: 200;
@@ -39,6 +50,15 @@ main {
 	font-size: 40pt;
 	padding-top: 20vw;
 	padding-left: 5vw;
+}
+
+#main_body .container#about .row h1 {
+	font-size: 40pt;
+	padding-top: 10vw;
+	text-align: center;
+}
+.container#about {
+	padding-bottom: 5vh;
 }
 button.header {
 	font-size: large;
@@ -78,7 +98,10 @@ footer {
 }
 
 .container .row > div > img {
-	width: 20em;
+	height: 23em;
+}
+.container .row > div > img#about {
+	height: 35em;
 }
 .col-lg-4 img {
 	padding: 4em 0;
@@ -96,9 +119,9 @@ footer {
 		padding: 0;
 	}
 
-	.col-lg-4 img {
+	/* .col-lg-4 img {
 		padding: 1vw 0;
-	}
+	} */
 	/* .col-lg-8 .lead {
 		margin: 0 0;
 	} */
@@ -109,9 +132,9 @@ footer {
 	.col-lg-8 {
 		padding: 0;
 	}
-	.col-lg-4 img {
+	/* .col-lg-4 img {
 		padding: 1vw 0;
-	}
+	} */
 	/* .col-lg-8 .lead {
 		margin: 0 0;
 	} */
@@ -120,11 +143,14 @@ footer {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.col-lg-8 {
-		padding: 5em 6em;
+		padding: 5em 0 0 6em;
+		margin-right: 0;
+
+		/* padding-right: 0; */
 	}
-	.col-lg-4 img {
+	/* .col-lg-4 img {
 		padding: 5vw 0;
-	}
+	} */
 	/* .col-lg-8 .lead {
 		margin: 0 0 0 10vw;
 	} */
@@ -162,3 +188,41 @@ button.main:hover {
 .bridge p {
 	color: #fff;
 }
+
+/* .wrapper {
+	max-width: 100%;
+	overflow-x: hidden;
+} */
+/* 
+.row .col-sm-6 img {
+	width: 60vh;
+	padding: 2vh 3vw;
+	text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+	.row .col-sm-6 img {
+		width: 60vh;
+		padding: 2vh 3vw;
+		text-align: center;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	.row .col-sm-6 img {
+		width: 60vh;
+		padding: 2vh 3vw;
+		text-align: center;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	.row .col-sm-6 img {
+		width: 100vh;
+		padding: 2vh 9vw;
+		text-align: center;
+	}
+}
+ */

@@ -14,84 +14,26 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 		/>
-		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="../styles/style.css" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-		<script src="scripts/javascript.js"></script>
+		<script src="../scripts/javascript.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<title>Document</title>
 	</head>
 	<body>
-		<!-- 'SF Mono', 'SF Mono', 'SF Mono', monospace, 'SF Mono' -->
-		<!-- Carousel -->
-		<div
-			id="carouselExampleSlidesOnly"
-			class="carousel slide carousel-fade"
-			data-bs-ride="carousel"
-		>
-			<!-- Didn't use buttons beccause z-index -->
-			<!-- <div class="carousel-indicators">
-				<button
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide-to="0"
-					class="active"
-					aria-current="true"
-					aria-label="Slide 1"
-				></button>
-				<button
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide-to="1"
-					aria-label="Slide 2"
-				></button>
-				<button
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide-to="2"
-					aria-label="Slide 3"
-				></button>
-			</div> -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img
-						src="images/4103879 (3).jpg"
-						class="d-block w-100 header_bg"
-						alt="1"
-					/>
-				</div>
-			</div>
-		</div>
-		<div class="empty">
-			<!-- <figure class="text-center">
-				<blockquote class="blockquote">
-					<p>A well-known quote, contained in a blockquote element.</p>
-				</blockquote>
-				<figcaption class="blockquote-footer">
-					Someone famous in <cite title="Source Title">Source Title</cite>
-				</figcaption>
-			</figure> -->
-			<h1>
-				Randomly cahnging text using js<br />
-				<small class="text-muted h4">With faded secondary text</small>
-				<br /><a href="#main_body"
-					><button type="button" class="header">Start</button></a
-				>
-			</h1>
-		</div>
-
 		<div class="wrapper">
 			<!-- NavBar -->
 			<nav
 				class="navbar navbar-expand-lg sticky-top navbar-dark transparent"
 			>
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#"
+					<a class="navbar-brand" href="../index.html"
 						><img
-							src="images/1280px-Dunder_Mifflin,_Inc.svg.png"
+							src="../images/1280px-Dunder_Mifflin,_Inc.svg.png"
 							alt=""
 							srcset=""
 					/></a>
@@ -114,17 +56,16 @@
 
 						<ul class="navbar-nav mb-2 mb-lg-0 d-flex">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">
-									Home
-								</a>
+								<a class="nav-link" href="../index.html"> Home </a>
 							</li>
-							<li class="nav-item dropdown">
+							<li class="nav-item active dropdown">
 								<a
-									class="nav-link dropdown-toggle"
+									class="nav-link active dropdown-toggle"
 									href="#"
 									id="navbarDropdown"
 									role="button"
 									data-bs-toggle="dropdown"
+									aria-current="page"
 									aria-expanded="false"
 								>
 									About
@@ -133,11 +74,7 @@
 									class="dropdown-menu"
 									aria-labelledby="navbarDropdown"
 								>
-									<li>
-										<a class="dropdown-item" href="pages/about.html"
-											>About</a
-										>
-									</li>
+									<li><a class="dropdown-item" href="#">About</a></li>
 									<li>
 										<a class="dropdown-item" href="#">Services</a>
 									</li>
@@ -150,16 +87,14 @@
 								</ul>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="pages/team.html">Team</a>
+								<a class="nav-link" href="./team.html">Team</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#">Pricing</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="pages/contact.html"
-									>Contact</a
-								>
+								<a class="nav-link" href="./contact.html">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -167,13 +102,23 @@
 			</nav>
 			<main id="main_body">
 				<!-- About -->
-				<div class="container">
+				<div class="container" id="about">
 					<div class="row">
-						<div class="col-lg-4">
-							<img src="images/paper_boxes.jpg" alt="qwerty" />
-						</div>
+						<h1>
+							Randomly cahnging text using js<br />
+							<small class="text-muted h4"
+								>With faded secondary text</small
+							>
+							<br /><a href="#main_body"
+								><button type="button" class="header">Start</button></a
+							>
+						</h1>
+					</div>
+					<div class="row">
 						<div class="col-lg-8">
-							<p class="h4">About Us</p>
+							<p class="h4">
+								Lorem ipsum dolor sit amet consectetur adipisicing.
+							</p>
 							<br />
 							<p>
 								Dunder Mifflin strives for excellence when it comes to
@@ -183,156 +128,41 @@
 								at the right price. As a business owner, you will not be
 								disappointed when you choose Dunder Mifflin! We promise!
 							</p>
-
+						</div>
+						<div class="col-lg-4">
+							<img src="../images/paper_boxes.jpg" alt="qwerty" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<img
+								src="../images/about_bldg.jpg"
+								alt="qwerty"
+								id="about"
+							/>
+						</div>
+						<div class="col-lg-8">
+							<p class="h4">
+								Lorem ipsum dolor sit amet consectetur adipisicing.
+							</p>
+							<br />
 							<p>
-								<a href="pages/about.html"
-									><button class="main">Read More</button></a
-								>
+								Dunder Mifflin Inc. provides its customers quality
+								office and information technology products, furniture,
+								printing values and the expertise required for making
+								informed buying choices.
+							</p>
+							<p>
+								We provide our products and services with a dedication
+								to the highest degree of integrity and quality of
+								customer satisfaction, developing long-term professional
+								relationships with employees that develop pride,
+								creating a stable working environment and company
+								spirit.
 							</p>
 						</div>
 					</div>
 				</div>
-				<!-- Transparent section w/diff bg -->
-				<section class="bridge">
-					<div class="container">
-						<div class="text-center" data-aos="zoom-in">
-							<h3>Get In Touch</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur, adipisicing
-								elit. Error perspiciatis tempora explicabo ipsam dolorum
-								<br />
-								nulla eum vitae assumenda mollitia excepturi.
-							</p>
-							<button class="header">Click Me!</button>
-						</div>
-					</div>
-				</section>
-				<!-- The circular photos thingy(Square photos REQD) -->
-				<div class="container" id="circular_photos">
-					<div class="row">
-						<div class="col-lg-4">
-							<img
-								class="rounded-circle"
-								src="images/square0.png"
-								alt="qwerty"
-							/>
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-						<div class="col-lg-4">
-							<img
-								class="rounded-circle"
-								src="images/square1.jpg"
-								alt="qwerty"
-							/>
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-						<div class="col-lg-4">
-							<img
-								class="rounded-circle"
-								src="images/square2.jpeg"
-								alt="qwerty"
-							/>
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg"></div>
-						<div class="col-lg"></div>
-						<div class="col-lg"></div>
-					</div>
-				</div>
-
-				<!-- Other Stuff -->
-				<div class="row">
-					<div class="card">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Beatae perspiciatis, veniam obcaecati quo odit est
-							reprehenderit ullam minima in corrupti fugiat, at dicta
-							nisi similique hic dolorem assumenda iusto tempore voluptas
-							asperiores! Repellat similique sed tempore commodi sint eum
-							quasi distinctio ut veritatis! Eveniet tenetur laudantium,
-							sapiente voluptas necessitatibus veniam, distinctio amet,
-							libero minus consectetur enim quod odio magnam animi ut
-							nam. Suscipit laboriosam laudantium quisquam nobis aliquid
-							unde saepe eveniet voluptatibus officiis aliquam
-							voluptatem, quo illum omnis necessitatibus laborum
-							molestiae distinctio reprehenderit rem nam, ab repudiandae
-							velit? Vero tempora sequi veniam omnis ipsam deleniti
-							explicabo minus dolore vitae ducimus?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Veritatis deleniti culpa accusantium minus, aperiam amet
-							voluptates facilis provident sequi eveniet architecto esse
-							suscipit labore eos aut necessitatibus adipisci dignissimos
-							possimus blanditiis quisquam quibusdam molestias, aliquam
-							ratione dolore. Sequi, maiores sit rem nobis dolorum,
-							aliquid praesentium minus voluptatibus, cum tenetur magnam
-							odio obcaecati soluta possimus totam vel doloremque beatae
-							placeat at laborum officiis deleniti? Maxime exercitationem
-							nesciunt illo enim sit saepe totam perferendis impedit
-							officiis nobis recusandae pariatur unde, provident atque
-							tempora architecto, alias reiciendis perspiciatis
-							dignissimos id. Hic eaque voluptates nam, quia doloremque
-							corporis fugiat. Nemo, ipsa. Eius, omnis doloremque?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Quidem saepe nostrum eum neque animi? Repellat ea neque
-							inventore, alias animi vero nostrum sapiente quae minus
-							quas beatae dolore dignissimos adipisci, eos consequuntur
-							doloribus architecto hic impedit cumque natus doloremque
-							necessitatibus cupiditate deserunt nulla. Reiciendis omnis
-							aliquam accusamus blanditiis dolores unde odit et est illum
-							sed vero error odio, ratione a fugiat recusandae aliquid.
-							Doloremque nesciunt mollitia aliquid dicta ab itaque eaque,
-							sit quae ducimus non ratione quod, eveniet aperiam
-							provident facere voluptas veritatis nam at libero earum.
-							Nam ullam quis aliquid doloribus, beatae, exercitationem
-							repellendus cum excepturi officia totam architecto!
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ducimus voluptatum consequuntur aspernatur hic, velit
-							cupiditate inventore ipsum autem iste dolor voluptas sunt
-							eos quibusdam eligendi nostrum itaque facilis numquam a ea,
-							consequatur natus similique commodi! Facere qui molestiae
-							quae animi error fugit nostrum consectetur iusto
-							consequuntur aspernatur veritatis repellat laudantium
-							dignissimos quia ut, necessitatibus officia. Corporis
-							excepturi voluptatibus dolores minus odio iusto unde culpa
-							quasi laboriosam eveniet ab quibusdam nobis quod qui et
-							optio, ex, voluptatum beatae rem? Consectetur eius suscipit
-							ipsum, dolores praesentium sapiente! Quidem tempore maiores
-							in libero minima molestias voluptate aut laudantium magni
-							fugiat, beatae exercitationem neque.
-						</p>
-					</div>
-				</div>
-
-				<!-- <div class="container">
-					<div class="row">
-						<div class="col-lg-6 mb-3">
-							<img src="images/square0.png" alt="qwerty" />
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-						<div class="col-lg-6 mb-3">
-							<img src="images/square1.jpg" alt="qwerty" />
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-					</div>
-				</div> -->
 			</main>
 			<!-- Footer -->
 			<footer class="card bg-dark text-center text-white">
