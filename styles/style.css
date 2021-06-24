@@ -1,0 +1,157 @@
+.carousel {
+	position: fixed;
+	width: 100%;
+	z-index: -100;
+	pointer-events: all;
+}
+
+.header_bg {
+	height: 90vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.navbar {
+	padding-bottom: 3vh;
+}
+.transparent {
+	background-image: none;
+	background-color: rgba(255, 255, 255, 0.274);
+	backdrop-filter: blur(10px);
+}
+
+.empty {
+	height: 90vh;
+	z-index: 0;
+	pointer-events: all;
+}
+main {
+	background-color: white;
+	z-index: 200;
+}
+.empty h1 {
+	font-size: 40pt;
+	padding-top: 20vw;
+	padding-left: 5vw;
+}
+button.header {
+	font-size: large;
+	transition: all 0.5s ease;
+	color: #fff;
+	border: 3px solid white;
+	text-align: center;
+	line-height: 1;
+	background-color: transparent;
+	padding: 10px;
+	outline: none;
+	border-radius: 4px;
+	z-index: auto;
+}
+button.header:hover {
+	color: #001f3f;
+	background-color: #fff;
+}
+/* .container {
+	display: inline-flexbox;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	/* vertical-align: middle;
+} */
+
+/* .container img {
+	margin: 5vh 1vw;
+	/* padding: 5vw 1vw; */ /*1st value is vertical padding, 2nd is horizontal
+	width: 33%;
+	vertical-align: middle;
+} */
+
+footer {
+	z-index: +50;
+	position: relative;
+}
+
+.container .row > div > img {
+	width: 20em;
+}
+.col-lg-4 img {
+	padding: 4em 0;
+}
+.col-lg-4 {
+	text-align: center;
+}
+#circular_photos {
+	padding: 5em 0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.col-lg-8 {
+		padding: 0;
+	}
+
+	.col-lg-4 img {
+		padding: 1vw 0;
+	}
+	/* .col-lg-8 .lead {
+		margin: 0 0;
+	} */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.col-lg-8 {
+		padding: 0;
+	}
+	.col-lg-4 img {
+		padding: 1vw 0;
+	}
+	/* .col-lg-8 .lead {
+		margin: 0 0;
+	} */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.col-lg-8 {
+		padding: 5em 6em;
+	}
+	.col-lg-4 img {
+		padding: 5vw 0;
+	}
+	/* .col-lg-8 .lead {
+		margin: 0 0 0 10vw;
+	} */
+}
+
+button.main {
+	font-size: large;
+	transition: all 0.5s ease;
+	color: rgb(0, 0, 0);
+	border: 2px solid rgb(0, 0, 0);
+	text-align: center;
+	line-height: 1;
+	background-color: transparent;
+	padding: 10px;
+	outline: none;
+	border-radius: 4px;
+	z-index: auto;
+}
+button.main:hover {
+	color: #ffffff;
+	background-color: rgb(0, 0, 0);
+}
+.col-lg-8 h3 {
+	padding: initial;
+}
+
+.bridge {
+	background: linear-gradient(rgba(2, 2, 2, 0.555), rgba(0, 0, 0, 0.65)),
+		url("../images/kk6gav3ykek51 (2).jpg") fixed center center;
+	background-size: fill;
+	padding: 100px 0;
+}
+
+.bridge h3,
+.bridge p {
+	color: #fff;
+}
