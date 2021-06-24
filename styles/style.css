@@ -1,3 +1,9 @@
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 .carousel {
 	position: fixed;
 	width: 100%;
@@ -55,19 +61,20 @@ button.header:hover {
 	display: inline-flexbox;
 	justify-content: space-around;
 	flex-wrap: nowrap;
-	/* vertical-align: middle;
-} */
-
-/* .container img {
-	margin: 5vh 1vw;
-	/* padding: 5vw 1vw; */ /*1st value is vertical padding, 2nd is horizontal
-	width: 33%;
-	vertical-align: middle;
+	width: 100%;
+	padding-right: 0;
+	margin-right: 0;
+	object-fit: fill;
+	max-width: 100%;
+	overflow-x: hidden;
 } */
 
 footer {
 	z-index: +50;
 	position: relative;
+	background: linear-gradient(rgba(2, 2, 2, 0.609), rgba(0, 0, 0, 0.602)),
+		url("../images/IMG_20201025_164026.jpg") fixed center center;
+	background-size: fill;
 }
 
 .container .row > div > img {
