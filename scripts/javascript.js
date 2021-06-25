@@ -51,3 +51,26 @@
 	});
 });
  */
+
+/* document.getElementById("send").addEventListener("click", show_sent);
+function show_sent() {
+	document.getElementById("sent").innerHTML = "Your message has been sent.";
+}
+ */
+
+document.getElementById("send").onclick = function () {
+	myFunction();
+};
+
+function myFunction() {
+	document.getElementById("sent").innerHTML = "Your message has been sent";
+}
+/* function validateForm() {
+	var a = document.getElementById("name");
+	var b = document.getElementById("email");
+	var d = document.getElementById("message");
+	if ((a == null || a == "", b == null || b == "", d == null || d == "")) {
+		document.getElementById("valuereqd").innerHTML = "Required Field";
+	}
+}
+ */
