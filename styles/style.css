@@ -57,8 +57,15 @@ main {
 	padding-top: 10vw;
 	text-align: center;
 }
+/*****************************/
+#main_body .row {
+	padding-left: 2vw;
+	max-width: 100%;
+}
+/*****************************/
 .container#about {
 	padding-bottom: 5vh;
+	padding-top: 0;
 }
 button.header {
 	font-size: large;
@@ -192,6 +199,10 @@ button.main:hover {
 /* .wrapper {
 	max-width: 100%;
 	overflow-x: hidden;
+} */
+/* .wrapper #main_body {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 } */
 /* 
 .row .col-sm-6 img {
@@ -433,9 +444,19 @@ button.main:hover {
 	background-color: white;
 }
 
-.team_pic {
+/* .team_pic {
 	background: linear-gradient(rgba(2, 2, 2, 0.555), rgba(0, 0, 0, 0.65)),
 		url("../images/kk6gav3ykek51 (2).jpg") fixed center center;
 	background-size: fill;
 	padding: 100px 0;
+} */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	font-size: 30pt;
+	text-align: center;
+	padding: 7vh 5vw;
 }
