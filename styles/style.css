@@ -4,10 +4,17 @@ body {
 	overflow-x: hidden;
 } */
 
+/* body {
+	background-color: rgb(133, 133, 133);
+} */
 html {
 	scroll-behavior: smooth;
 }
 
+#main_body,
+.team {
+	background-color: rgb(231, 231, 231);
+}
 .carousel {
 	position: fixed;
 	width: 100%;
@@ -159,7 +166,7 @@ footer {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.col-lg-8 {
-		padding: 5em 0 0 6em;
+		padding: 5em 0 0 8em;
 		margin-right: 0;
 
 		/* padding-right: 0; */
@@ -584,4 +591,128 @@ h2#pricing_heading {
 }
 #services {
 	padding-top: 5em;
+}
+
+#why {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.team#team {
+	padding-bottom: 5vw;
+}
+
+.team .member {
+	position: relative;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	border-radius: 5px;
+	background: #fff;
+	transition: 0.5s;
+}
+
+.team .member .pic {
+	overflow: hidden;
+	width: 180px;
+	border-radius: 50%;
+}
+
+.team .member .pic img {
+	transition: ease-in-out 0.3s;
+}
+
+.team .member:hover {
+	transform: translateY(-10px);
+}
+
+.team .member .member-info {
+	padding-left: 30px;
+}
+
+.team .member h4 {
+	font-weight: 700;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: #37517e;
+}
+
+.team .member span {
+	display: block;
+	font-size: 15px;
+	padding-bottom: 10px;
+	position: relative;
+	font-weight: 500;
+}
+
+.team .member span::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 1px;
+	background: #cbd6e9;
+	bottom: 0;
+	left: 0;
+}
+
+.team .member p {
+	margin: 10px 0 0 0;
+	font-size: 14px;
+}
+
+.team .member .social {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.team .member .social a {
+	transition: ease-in-out 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	width: 32px;
+	height: 32px;
+	background: #eff2f8;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.team .member .social a i {
+	color: #5d5d5d;
+	font-size: 16px;
+	margin: 0 2px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.team .member .social a:hover {
+	background: #183e62;
+}
+
+.team .member .social a:hover i {
+	color: #fff;
+}
+
+.team .member .social a + a {
+	margin-left: 8px;
+}
+iframe {
+	height: 500px;
+	width: 500px;
+}
+@media only screen and (max-width: 1320px) {
+	iframe {
+		height: 500px;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	iframe {
+		height: 500px;
+		width: 20em;
+	}
 }
