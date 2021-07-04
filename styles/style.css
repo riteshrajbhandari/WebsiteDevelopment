@@ -22,6 +22,38 @@ html {
 	pointer-events: all;
 }
 
+span#carousel_text {
+	animation-duration: 2s;
+	animation-name: fade;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* #carousel_text {
+	opacity: 1;
+	transition: opacity 2s linear;
+} */
+
 .header_bg {
 	height: 90vh;
 	object-fit: cover;
@@ -53,10 +85,37 @@ main {
 	background-color: white;
 	z-index: 200;
 }
+
 .empty h1 {
 	font-size: 40pt;
-	padding-top: 20vw;
+	padding-top: 5vw;
 	padding-left: 5vw;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.empty h1 {
+		font-size: 40pt;
+		padding-top: 5vw;
+		padding-left: 5vw;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.empty h1 {
+		font-size: 40pt;
+		padding-top: 5vw;
+		padding-left: 5vw;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.empty h1 {
+		font-size: 40pt;
+		padding-top: 20vw;
+		padding-left: 5vw;
+	}
 }
 
 #main_body .container#about .row h1 {
@@ -716,3 +775,59 @@ iframe {
 		width: 20em;
 	}
 }
+
+/* span#carousel_text {
+	display: inline-block;
+	color: black;
+	animation: fadeIn linear 7s;
+	-webkit-animation: fadeIn linear 7s;
+	-moz-animation: fadeIn linear 7s;
+	-o-animation: fadeIn linear 7s;
+	-ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+ */
