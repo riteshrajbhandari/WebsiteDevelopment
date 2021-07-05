@@ -15,6 +15,15 @@ html {
 .team {
 	background-color: rgb(231, 231, 231);
 }
+#btn-back-to-top {
+	position: fixed;
+	bottom: 7vh;
+	right: 7vw;
+	display: none;
+	border-radius: 50%;
+	filter: drop-shadow(1px 1px 7px #292929);
+	z-index: 999;
+}
 .carousel {
 	position: fixed;
 	width: 100%;
