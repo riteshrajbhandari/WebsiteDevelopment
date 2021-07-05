@@ -143,27 +143,34 @@ h1,
 h2 {
 	font-family: "Montserrat", sans-serif;
 }
-h3 {
+h3,
+#footer_text {
 	font-family: "Open Sans Condensed", sans-serif;
 }
-.h4 {
+/* .h4 {
 	font-family: "Manrope", sans-serif;
-}
+} */
+.h4,
 .nav-link,
 .dropdown-item,
 h3.mb-4 {
 	font-family: "Manrope", sans-serif;
 }
 
+.footer strong,
+#footer_links {
+	font-family: "Manrope", sans-serif;
+}
+
 .empty h1 {
-	font-size: 40pt;
+	font-size: 30pt;
 	padding-top: 5vw;
 	padding-left: 5vw;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.empty h1 {
-		font-size: 40pt;
+		font-size: 30pt;
 		padding-top: 5vw;
 		padding-left: 5vw;
 	}
@@ -249,6 +256,7 @@ footer {
 }
 .col-lg-4 img {
 	padding: 4em 0;
+	height: auto;
 }
 .col-lg-4 {
 	text-align: center;
@@ -308,6 +316,14 @@ footer {
 	}
 }
 
+.table-responsive#pricing_table table {
+	background-color: rgb(218, 218, 218);
+}
+.table-responsive#pricing_table {
+	filter: drop-shadow(10px 10px 10px #696969);
+	display: none;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.col-lg-8 {
@@ -332,6 +348,10 @@ footer {
 	}
 	#links li {
 		padding: 1em 0;
+	}
+
+	.table-responsive#pricing_table {
+		display: block;
 	}
 
 	/* .col-lg-4 img {
@@ -662,6 +682,10 @@ h2 {
 }
 
 .pricingTable {
+	filter: drop-shadow(5px 5px 10px #696969);
+}
+
+.pricingTable {
 	margin-top: 30px;
 	text-align: center;
 	position: relative;
@@ -752,6 +776,7 @@ h2 {
 .pricingTable:hover .value {
 	background: #002561;
 }
+
 @media only screen and (max-width: 990px) {
 	.pricingTable {
 		margin-bottom: 35px;
