@@ -20,7 +20,60 @@ html {
 	width: 100%;
 	z-index: -100;
 	pointer-events: all;
+	opacity: 75%;
 }
+
+.text-mutedd {
+	color: rgb(66, 66, 66);
+}
+
+/* .fade-out {
+	animation: fadeOut ease 8s;
+	-webkit-animation: fadeOut ease 8s;
+	-moz-animation: fadeOut ease 8s;
+	-o-animation: fadeOut ease 8s;
+	-ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-moz-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-o-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-ms-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+} */
 
 span#carousel_text {
 	animation-duration: 2s;
@@ -86,6 +139,22 @@ main {
 	z-index: 200;
 }
 
+h1,
+h2 {
+	font-family: "Montserrat", sans-serif;
+}
+h3 {
+	font-family: "Open Sans Condensed", sans-serif;
+}
+.h4 {
+	font-family: "Manrope", sans-serif;
+}
+.nav-link,
+.dropdown-item,
+h3.mb-4 {
+	font-family: "Manrope", sans-serif;
+}
+
 .empty h1 {
 	font-size: 40pt;
 	padding-top: 5vw;
@@ -122,6 +191,8 @@ main {
 	font-size: 40pt;
 	padding-top: 2em;
 	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: lighter;
 }
 /*****************************/
 #main_body .row {
@@ -188,6 +259,55 @@ footer {
 #links li {
 	padding: 0;
 }
+
+#about-images {
+	/* Prevent vertical gaps */
+	line-height: 0;
+
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0px;
+	-moz-column-count: 2;
+	-moz-column-gap: 0px;
+	column-count: 2;
+	column-gap: 0px;
+}
+
+#about-images img {
+	width: 100% !important;
+	height: auto !important;
+}
+#about-images img {
+	padding: 4vh 4vh 4vh 4vh;
+}
+@media (max-width: 1200px) {
+	#about-images {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+@media (max-width: 1000px) {
+	#about-images {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+@media (max-width: 800px) {
+	#about-images {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+@media (max-width: 400px) {
+	#about-images {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.col-lg-8 {

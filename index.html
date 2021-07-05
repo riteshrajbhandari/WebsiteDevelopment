@@ -22,6 +22,17 @@
 		></script>
 		<script src="scripts/javascript.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Montserrat&family=Open+Sans+Condensed:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font-family: 'Manrope', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'Open Sans Condensed', sans-serif; -->
 		<title>Document</title>
 	</head>
 	<body>
@@ -55,11 +66,47 @@
 				></button>
 			</div> -->
 			<div class="carousel-inner">
+				<!-- <div class="carousel-item active">
+					<video autoplay loop muted class="d-block w-100 header_bg">
+						<source
+							src="videos/officecarouselvideo.mp4"
+							type="video/mp4"
+						/>
+					</video>
+				</div> -->
 				<div class="carousel-item active">
 					<img
 						src="images/4103879 (3).jpg"
 						class="d-block w-100 header_bg"
 						alt="1"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/the-office-kb-main-200716.webp"
+						class="d-block w-100 header_bg"
+						alt="2"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/The-Office-Trivia-2019.jpg"
+						class="d-block w-100 header_bg"
+						alt="3"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/the-office-us-steve-carrell-1568618661.jpg"
+						class="d-block w-100 header_bg"
+						alt="4"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/the-office-us-z.jpg"
+						class="d-block w-100 header_bg"
+						alt="5"
 					/>
 				</div>
 			</div>
@@ -76,11 +123,11 @@
 			<h1>
 				<span
 					id="carousel_text"
-					class="animated fadeIn"
+					class="animated fadeIn fade-out"
 					onload="randomize_heading();"
 				></span>
 				<br />
-				<small class="text-muted h4">
+				<small class="mute_text h4">
 					Have a peek into this exuberant office that is Dunder Mifflin
 				</small>
 				<br /><a href="#main_body"
@@ -145,12 +192,19 @@
 										>
 									</li>
 									<li>
-										<a class="dropdown-item" href="#">Something</a>
+										<a
+											class="dropdown-item"
+											href="pages/about.html#about-images"
+											>Photo Wall
+										</a>
 									</li>
 									<li><hr class="dropdown-divider" /></li>
 									<li>
-										<a class="dropdown-item" href="#"
-											>Something else here</a
+										<a
+											class="dropdown-item disabled"
+											href="#"
+											aria-disabled="true"
+											>To be Added</a
 										>
 									</li>
 								</ul>

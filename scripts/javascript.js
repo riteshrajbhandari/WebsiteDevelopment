@@ -27,6 +27,6 @@ function randomize_heading() {
 	];
 	let quote = quote_list[Math.floor(Math.random() * quote_list.length)];
 	document.getElementById("carousel_text").textContent = quote;
-	setTimeout(randomize_heading, 7500);
+	setTimeout(randomize_heading, 10000);
 }
 randomize_heading();
