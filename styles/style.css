@@ -225,9 +225,10 @@ strong,
 }
 button.header {
 	font-size: large;
+	font-weight: bold;
 	transition: all 0.5s ease;
-	color: #fff;
-	border: 3px solid white;
+	/* color: #fff;
+	border: 3px solid white; */
 	text-align: center;
 	line-height: 1;
 	background-color: transparent;
@@ -236,10 +237,10 @@ button.header {
 	border-radius: 4px;
 	z-index: auto;
 }
-button.header:hover {
+/* button.header:hover {
 	color: #001f3f;
 	background-color: #fff;
-}
+} */
 /* .container {
 	display: inline-flexbox;
 	justify-content: space-around;
@@ -553,13 +554,13 @@ button.main:hover {
 	color: #000;
 }
 .dbox p a {
-	color: #6a4770;
+	color: #3a836e;
 }
 .dbox .icon {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background: rgb(143, 88, 88);
+	background: #245c4c;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
@@ -709,7 +710,7 @@ h2 {
 	line-height: 30px;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
-	background: rgb(117, 63, 63);
+	background: #7a5c36;
 	transition: all 0.4s ease 0s;
 }
 .pricingTable .value {
@@ -717,7 +718,7 @@ h2 {
 	font-size: 35px;
 	font-weight: 700;
 	color: rgb(255, 255, 255);
-	background: rgb(117, 63, 63);
+	background: #7a5c36;
 	transition: all 0.4s ease 0s;
 }
 .pricingTable:hover .title,
@@ -780,13 +781,13 @@ h2 {
 }
 .pricingTable:hover .link a {
 	color: #fff;
-	background: #002561;
-	border: 1px solid #002561;
+	background: #a62e2e;
+	border: 1px solid #a62e2e;
 }
 .pricingTable:hover .pricing_heading:after,
 .pricingTable:hover .title,
 .pricingTable:hover .value {
-	background: #002561;
+	background: #a62e2e;
 }
 
 @media only screen and (max-width: 990px) {
@@ -849,7 +850,7 @@ h2#pricing_heading {
 	font-weight: 700;
 	margin-bottom: 5px;
 	font-size: 20px;
-	color: #37517e;
+	color: #3c4785;
 }
 
 .team .member span {
