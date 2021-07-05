@@ -247,8 +247,8 @@ footer {
 	z-index: +50;
 	position: relative;
 	background: linear-gradient(rgba(2, 2, 2, 0.609), rgba(0, 0, 0, 0.602)),
-		url("../images/IMG_20201025_164026.jpg") fixed center center;
-	background-size: fill;
+		url("../images/untitled-1_8_1_900x1.jpg") fixed center center;
+	background-size: cover;
 }
 
 .container .row > div > img {
