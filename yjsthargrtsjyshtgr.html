@@ -1,209 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"
+			integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<style>
-			body {
-				height: 1900px;
-			}
-			nav {
-				background-color: aquamarine;
-				position: fixed;
-				width: 100%;
-				transition: 0.9s;
-			}
-			nav img {
-				transition: 0.9s;
-			}
-			.gred {
-				background-color: blueviolet;
-			}
-			.arrow {
-				background-color: red;
-				bottom: 0;
-				left: 0;
-				width: 50px;
-				height: 30px;
-				position: fixed;
-				display: none;
-			}
-			.d-flex {
-				display: flex;
-			}
-			.sb {
-				justify-content: space-between;
-			}
-			nav {
-				display: inline;
-			}
-			nav ul li {
-				display: inline;
-			}
-			nav ul li a {
-				padding: 20px;
-				color: #000;
-			}
-
-			.navbar {
-				padding-top: 0;
-				padding-bottom: 0;
-			}
-			.navbar .container-fluid .navbar-brand img {
-				height: 55px;
-				padding: 0 0;
-				margin: 0 0;
-			}
-			.size {
-				width: 120px;
-			}
-
-			.navbar {
-				height: 10vh;
-			}
-		</style>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/formvalidation/0.6.2-dev/css/formValidation.min.css"
+			integrity="sha512-B9GRVQaYJ7aMZO3WC2UvS9xds1D+gWQoNiXiZYRlqIVszL073pHXi0pxWxVycBk0fnacKIE3UHuWfSeETDCe7w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
-	<body id="abc">
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"
-					><img
-						src="https://broadwayinfosys.com/uploads/logo/255_77_1582513174.255_77_1578457998.logo-2.png"
-						alt="logo"
-						class="bcd navbar_ht"
-				/></a>
+	<body>
+		<!-- <form id="demoForm" method="POST">
+			<div class="row mb-3">
+				<label class="col-sm-3 col-form-label">Full name</label>
+				<div class="col-sm-4">
+					<input
+						type="text"
+						class="form-control"
+						name="firstName"
+						placeholder="First name"
+					/>
+				</div>
+				<div class="col-sm-4">
+					<input
+						type="text"
+						class="form-control"
+						name="lastName"
+						placeholder="Last name"
+					/>
+				</div>
 			</div>
 
-			<ul class="navbar-nav mb-2 mb-lg-0 d-flex">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">Lorem</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#">ipsum</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#">ipsum</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#">ipsum</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#">ipsum</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="arrow">
-			<a href="#abc">A</a>
-		</div>
-		<div id="text">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
-				voluptatum laborum, optio ex velit suscipit magnam corrupti rerum
-				facere, molestias voluptates accusamus cumque exercitationem porro
-				quis eligendi dignissimos qui error maxime omnis itaque. Porro
-				quibusdam doloremque repellat blanditiis quas magni, eaque quidem
-				consequuntur nobis aliquid cupiditate optio fuga ratione, est veniam
-				sint minima alias, commodi voluptatum officia beatae? At dolore
-				saepe iure. Neque beatae error quis est perspiciatis eaque nobis
-				sunt laudantium ad architecto unde, minus sapiente nemo assumenda
-				similique labore doloremque numquam tenetur vero reprehenderit.
-				Adipisci, quo. Laudantium dolorum voluptate nobis dolor
-				perspiciatis, tenetur expedita sit nam earum!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
-				voluptatum laborum, optio ex velit suscipit magnam corrupti rerum
-				facere, molestias voluptates accusamus cumque exercitationem porro
-				quis eligendi dignissimos qui error maxime omnis itaque. Porro
-				quibusdam doloremque repellat blanditiis quas magni, eaque quidem
-				consequuntur nobis aliquid cupiditate optio fuga ratione, est veniam
-				sint minima alias, commodi voluptatum officia beatae? At dolore
-				saepe iure. Neque beatae error quis est perspiciatis eaque nobis
-				sunt laudantium ad architecto unde, minus sapiente nemo assumenda
-				similique labore doloremque numquam tenetur vero reprehenderit.
-				Adipisci, quo. Laudantium dolorum voluptate nobis dolor
-				perspiciatis, tenetur expedita sit nam earum!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
-				voluptatum laborum, optio ex velit suscipit magnam corrupti rerum
-				facere, molestias voluptates accusamus cumque exercitationem porro
-				quis eligendi dignissimos qui error maxime omnis itaque. Porro
-				quibusdam doloremque repellat blanditiis quas magni, eaque quidem
-				consequuntur nobis aliquid cupiditate optio fuga ratione, est veniam
-				sint minima alias, commodi voluptatum officia beatae? At dolore
-				saepe iure. Neque beatae error quis est perspiciatis eaque nobis
-				sunt laudantium ad architecto unde, minus sapiente nemo assumenda
-				similique labore doloremque numquam tenetur vero reprehenderit.
-				Adipisci, quo. Laudantium dolorum voluptate nobis dolor
-				perspiciatis, tenetur expedita sit nam earum!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
-				voluptatum laborum, optio ex velit suscipit magnam corrupti rerum
-				facere, molestias voluptates accusamus cumque exercitationem porro
-				quis eligendi dignissimos qui error maxime omnis itaque. Porro
-				quibusdam doloremque repellat blanditiis quas magni, eaque quidem
-				consequuntur nobis aliquid cupiditate optio fuga ratione, est veniam
-				sint minima alias, commodi voluptatum officia beatae? At dolore
-				saepe iure. Neque beatae error quis est perspiciatis eaque nobis
-				sunt laudantium ad architecto unde, minus sapiente nemo assumenda
-				similique labore doloremque numquam tenetur vero reprehenderit.
-				Adipisci, quo. Laudantium dolorum voluptate nobis dolor
-				perspiciatis, tenetur expedita sit nam earum!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
-				voluptatum laborum, optio ex velit suscipit magnam corrupti rerum
-				facere, molestias voluptates accusamus cumque exercitationem porro
-				quis eligendi dignissimos qui error maxime omnis itaque. Porro
-				quibusdam doloremque repellat blanditiis quas magni, eaque quidem
-				consequuntur nobis aliquid cupiditate optio fuga ratione, est veniam
-				sint minima alias, commodi voluptatum officia beatae? At dolore
-				saepe iure. Neque beatae error quis est perspiciatis eaque nobis
-				sunt laudantium ad architecto unde, minus sapiente nemo assumenda
-				similique labore doloremque numquam tenetur vero reprehenderit.
-				Adipisci, quo. Laudantium dolorum voluptate nobis dolor
-				perspiciatis, tenetur expedita sit nam earum!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
-				voluptatum laborum, optio ex velit suscipit magnam corrupti rerum
-				facere, molestias voluptates accusamus cumque exercitationem porro
-				quis eligendi dignissimos qui error maxime omnis itaque. Porro
-				quibusdam doloremque repellat blanditiis quas magni, eaque quidem
-				consequuntur nobis aliquid cupiditate optio fuga ratione, est veniam
-				sint minima alias, commodi voluptatum officia beatae? At dolore
-				saepe iure. Neque beatae error quis est perspiciatis eaque nobis
-				sunt laudantium ad architecto unde, minus sapiente nemo assumenda
-				similique labore doloremque numquam tenetur vero reprehenderit.
-				Adipisci, quo. Laudantium dolorum voluptate nobis dolor
-				perspiciatis, tenetur expedita sit nam earum!
-			</p>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<div class="row mb-3">
+				<label class="col-sm-3 col-form-label">Address</label>
+				<div class="col-sm-3">
+					<input
+						type="text"
+						class="form-control"
+						name="city"
+						placeholder="City"
+					/>
+				</div>
+				<div class="col-sm-3">
+					<input
+						type="text"
+						class="form-control"
+						name="state"
+						placeholder="State"
+					/>
+				</div>
+				<div class="col-sm-3">
+					<input
+						type="text"
+						class="form-control"
+						name="zipcode"
+						placeholder="Zipcode"
+					/>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-sm-9 offset-sm-3">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+		</form> -->
+		<form class="row g-3 needs-validation" novalidate>
+			<div class="col-md-4">
+				<label for="validationCustom01" class="form-label"
+					>First name</label
+				>
+				<input
+					type="text"
+					class="form-control"
+					id="validationCustom01"
+					value="Mark"
+					required
+				/>
+				<div class="valid-feedback">Looks good!</div>
+			</div>
+			<div class="col-md-4">
+				<label for="validationCustom02" class="form-label">Last name</label>
+				<input
+					type="text"
+					class="form-control"
+					id="validationCustom02"
+					value="Otto"
+					required
+				/>
+				<div class="valid-feedback">Looks good!</div>
+			</div>
+			<div class="col-md-4">
+				<label for="validationCustomUsername" class="form-label"
+					>Username</label
+				>
+				<div class="input-group has-validation">
+					<span class="input-group-text" id="inputGroupPrepend">@</span>
+					<input
+						type="text"
+						class="form-control"
+						id="validationCustomUsername"
+						aria-describedby="inputGroupPrepend"
+						required
+					/>
+					<div class="invalid-feedback">Please choose a username.</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label for="validationCustom03" class="form-label">City</label>
+				<input
+					type="text"
+					class="form-control"
+					id="validationCustom03"
+					required
+				/>
+				<div class="invalid-feedback">Please provide a valid city.</div>
+			</div>
+			<div class="col-md-3">
+				<label for="validationCustom04" class="form-label">State</label>
+				<select class="form-select" id="validationCustom04" required>
+					<option selected disabled value="">Choose...</option>
+					<option>...</option>
+				</select>
+				<div class="invalid-feedback">Please select a valid state.</div>
+			</div>
+			<div class="col-md-3">
+				<label for="validationCustom05" class="form-label">Zip</label>
+				<input
+					type="text"
+					class="form-control"
+					id="validationCustom05"
+					required
+				/>
+				<div class="invalid-feedback">Please provide a valid zip.</div>
+			</div>
+			<div class="col-12">
+				<div class="form-check">
+					<input
+						class="form-check-input"
+						type="checkbox"
+						value=""
+						id="invalidCheck"
+						required
+					/>
+					<label class="form-check-label" for="invalidCheck">
+						Agree to terms and conditions
+					</label>
+					<div class="invalid-feedback">
+						You must agree before submitting.
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<button class="btn btn-primary" type="submit">Submit form</button>
+			</div>
+		</form>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.6/es6-shim.min.js"
+			integrity="sha512-Dg4/NsM35WYe4Vpj/ZzxsN7K4ifsi6ecw9+VB5rmCntqoQjEu4dQxL6/qQVebHalidCqWiVkWVK59QtJCCjBDQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/formvalidation/0.6.2-dev/js/formValidation.min.js"
+			integrity="sha512-DlXWqMPKer3hZZMFub5hMTfj9aMQTNDrf0P21WESBefJSwvJguz97HB007VuOEecCApSMf5SY7A7LkQwfGyVfg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
 		<script>
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 50) {
-					$("nav").addClass("gred");
-					$(".arrow").show();
-					$(".bcd").addClass("size");
-					$(".navbar_ht").addClass("navbar");
-				} else {
-					$("nav").removeClass("gred");
-					$(".arrow").hide();
-					$(".bcd").removeClass("size");
-					$(".navbar_ht").removeClass("navbar");
-				}
-			});
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function () {
+				"use strict";
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.querySelectorAll(".needs-validation");
+
+				// Loop over them and prevent submission
+				Array.prototype.slice.call(forms).forEach(function (form) {
+					form.addEventListener(
+						"submit",
+						function (event) {
+							if (!form.checkValidity()) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+
+							form.classList.add("was-validated");
+						},
+						false
+					);
+				});
+			})();
 		</script>
 	</body>
 </html>

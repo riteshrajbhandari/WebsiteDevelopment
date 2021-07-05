@@ -179,6 +179,7 @@ strong,
 	padding-top: 5vw;
 	padding-left: 5vw;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.empty h1 {
@@ -267,10 +268,32 @@ footer {
 .container .row > div > img#about {
 	height: 35em;
 }
+
+#about-images img,
+.zoom {
+	transition: transform 0.2s; /* Animation */
+}
+#about-images img:hover,
+.zoom:hover {
+	transform: scale(
+		1.25
+	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .col-lg-4 img {
 	padding: 4em 0;
 	height: auto;
 }
+.col-lg-4#why_dunder img {
+	padding: 4em 0;
+	width: 15em;
+	height: auto;
+}
+/* .col-lg-4#why_dunder {
+	padding: 0;
+	width: 15em;
+	height: auto;
+} */
 .col-lg-4 {
 	text-align: center;
 }
@@ -337,6 +360,13 @@ footer {
 	display: none;
 }
 
+.h4#peopleperson,
+p#read_more,
+p#about_headings,
+p#service_headings {
+	text-align: center;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.col-lg-8 {
@@ -344,6 +374,12 @@ footer {
 	}
 	#links li {
 		padding: 0;
+	}
+	.h4#peopleperson,
+	p#read_more,
+	p#about_headings,
+	p#service_headings {
+		text-align: center;
 	}
 
 	/* .col-lg-4 img {
@@ -367,6 +403,13 @@ footer {
 		display: block;
 	}
 
+	.h4#peopleperson,
+	p#read_more,
+	p#about_headings,
+	p#service_headings {
+		text-align: center;
+	}
+
 	/* .col-lg-4 img {
 		padding: 1vw 0;
 	} */
@@ -385,6 +428,13 @@ footer {
 	}
 	#links li {
 		padding: 1em 0;
+	}
+
+	.h4#peopleperson,
+	p#read_more,
+	p#about_headings,
+	p#service_headings {
+		text-align: left;
 	}
 
 	/* .col-lg-4 img {
@@ -416,16 +466,17 @@ button.main:hover {
 	padding: initial;
 }
 
-.bridge {
+.bridge_section {
 	background: linear-gradient(rgba(2, 2, 2, 0.555), rgba(0, 0, 0, 0.65)),
 		url("../images/The-Office-Dunder-Mifflin-1366x768.jpg") fixed center
 			center;
 	background-size: cover;
 	padding: 100px 0;
+	z-index: 9999;
 }
 
-.bridge h3,
-.bridge p {
+.bridge_section h3,
+.bridge_section p {
 	color: #fff;
 }
 
@@ -741,7 +792,7 @@ h2 {
 	width: 35px;
 	height: 100%;
 	background: #f8f8f8;
-	box-shadow: 9px 9px 20px #ddd;
+	box-shadow: 9px 9px 20px rgb(139, 139, 139);
 	position: absolute;
 	top: 0;
 	right: 0;
