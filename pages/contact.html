@@ -4,17 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"
 			integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-		<!-- <link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/> -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -46,14 +42,6 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<!-- Go to top button -->
-		<!-- <button
-			type="button"
-			class="btn btn-secondary btn-floating btn-lg bi bi-arrow-up"
-			id="btn-back-to-top"
-		>
-			<i class="fas fa-arrow-up"></i>
-		</button> -->
 		<div class="wrapper">
 			<!-- NavBar -->
 			<nav
@@ -63,8 +51,7 @@
 					<a class="navbar-brand" href="../index.html"
 						><img
 							src="../images/1280px-Dunder_Mifflin,_Inc.svg.png"
-							alt=""
-							srcset=""
+							alt="logo"
 					/></a>
 					<button
 						class="navbar-toggler"
@@ -141,7 +128,7 @@
 					</div>
 				</div>
 			</nav>
-			<div id="main_body">
+			<div class="main_body">
 				<!-- About -->
 				<section class="ftco-section">
 					<div class="container" id="contact">
@@ -301,11 +288,6 @@
 													novalidate
 												>
 													<div class="col-md-4 form_group">
-														<!-- <label
-															for="validationCustom01"
-															class="form-label"
-															>First name</label
-														> -->
 														<input
 															type="text"
 															class="form-control"
@@ -318,11 +300,6 @@
 														</div>
 													</div>
 													<div class="col-md-4 form_group">
-														<!-- <label
-															for="validationCustom02"
-															class="form-label"
-															>Last name</label
-														> -->
 														<input
 															type="text"
 															class="form-control"
@@ -334,86 +311,30 @@
 															Looks good!
 														</div>
 													</div>
-													<div class="col-md-4 form_group">
-														<!-- <label
-															for="validationCustomUsername"
-															class="form-label"
-															>Username</label
-														> -->
-														<div
-															class="input-group has-validation"
-														>
-															<span
-																class="input-group-text"
-																id="inputGroupPrepend"
-																>@</span
-															>
-															<input
-																type="text"
-																class="form-control"
-																id="validationCustomUsername"
-																aria-describedby="inputGroupPrepend"
-																placeholder="Username"
-																required
-															/>
-															<div class="invalid-feedback">
-																Please choose a username.
-															</div>
-														</div>
-													</div>
-													<div class="col-md-6 form_group">
-														<!-- <label
-															for="validationCustom03"
-															class="form-label"
-															>City</label
-														> -->
+
+													<div class="col-md-8 form_group">
 														<input
-															type="text"
+															type="email"
 															class="form-control"
 															id="validationCustom03"
-															placeholder="City"
+															placeholder="Email"
 															required
 														/>
-														<div class="invalid-feedback">
-															Please provide a valid city.
+														<div class="valid-feedback">
+															Looks good!
 														</div>
 													</div>
-													<div class="col-md-3 form_group">
-														<!-- <label
-															for="validationCustom04"
-															class="form-label"
-															>State</label
-														> -->
-														<select
-															class="form-select"
-															id="validationCustom04"
-															aria-placeholder="State"
-															required
-														>
-															<option selected disabled value="">
-																Choose...
-															</option>
-															<option>...</option>
-														</select>
-														<div class="invalid-feedback">
-															Please select a valid state.
-														</div>
-													</div>
-													<div class="col-md-3 form_group">
-														<!-- <label
-															for="validationCustom05"
-															class="form-label"
-															>Zip</label
-														> -->
-														<input
-															type="text"
+													<div
+														class="col-12 input-group form-group"
+													>
+														<textarea
 															class="form-control"
-															id="validationCustom05"
-															placeholder="Zip"
+															aria-label="Message"
+															placeholder="Message"
 															required
-														/>
+														></textarea>
 														<div class="invalid-feedback">
-															Please provide a valid zip.
+															You cannot send an empty message
 														</div>
 													</div>
 													<div class="col-12 form_group">
@@ -446,92 +367,6 @@
 														</button>
 													</div>
 												</form>
-												<!-- <form
-													method="POST"
-													id="contactForm"
-													name="contactForm"
-													class="contactForm"
-												>
-													<div class="row needs-validation">
-														<div class="col-md-6">
-															<div class="form-group">
-																<label class="label" for="name"
-																	>Full Name</label
-																>
-																<input
-																	type="text"
-																	class="form-control"
-																	name="name"
-																	id="name"
-																	placeholder="Name"
-																/>
-																<div id="valuereqd"></div>
-															</div>
-														</div>
-														<div class="col-md-6">
-															<div class="form-group">
-																<label class="label" for="email"
-																	>Email Address</label
-																>
-																<input
-																	type="email"
-																	class="form-control"
-																	name="email"
-																	id="email"
-																	placeholder="Email"
-																/>
-															</div>
-														</div>
-														<div class="col-md-12">
-															<div class="form-group">
-																<label
-																	class="label"
-																	for="subject"
-																	>Subject</label
-																>
-																<input
-																	type="text"
-																	class="form-control"
-																	name="subject"
-																	id="subject"
-																	placeholder="Subject"
-																/>
-															</div>
-														</div>
-														<div
-															class="col-md-12 needs-validation"
-														>
-															<div class="form-group">
-																<label class="label" for="#"
-																	>Message</label
-																>
-																<textarea
-																	name="message"
-																	class="form-control"
-																	id="message"
-																	cols="30"
-																	rows="4"
-																	placeholder="Message"
-																></textarea>
-															</div>
-														</div>
-														<div class="col-md-12">
-															<div class="form-group">
-																<button
-																	type="button"
-																	value="Send Message"
-																	class="main"
-																	id="send"
-																	onclick="validateForm();"
-																>
-																	Send Message
-																</button>
-
-																<div id="sent"></div>
-															</div>
-														</div>
-													</div>
-												</form> -->
 											</div>
 										</div>
 										<div class="col-md-5 d-flex align-items-stretch">
@@ -629,7 +464,7 @@
 
 					<!-- Form -->
 					<section class="">
-						<form action="">
+						<form>
 							<div class="row d-flex justify-content-center">
 								<div class="col-auto">
 									<p class="pt-2">
@@ -659,13 +494,10 @@
 					</section>
 					<section class="mb-4" id="footer_text">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Sunt distinctio earum repellat quaerat voluptatibus placeat
-							nam, commodi optio pariatur est quia magnam eum harum
-							corrupti dicta, aliquam sequi voluptate quas.
+							There’s a lot of beauty in ordinary things. Isn’t that kind
+							of the point? - Pam Beesly
 						</p>
 					</section>
-					<!-- Map -->
 					<section class="">
 						<div class="row">
 							<!-- Links -->
@@ -673,7 +505,7 @@
 								class="col-lg-12 col-md-12 mb-4 mb-md-0"
 								id="footer_links"
 							>
-								<h5 class="text-uppercase">Links</h5>
+								<h5 class="text-uppercase">Dunder Mifflin</h5>
 								<ul class="list-unstyled mb-0" id="links">
 									<li>
 										<a href="../index.html" class="text-white">
@@ -729,6 +561,5 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="../scripts/form_val.js"></script>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 	</body>
 </html>

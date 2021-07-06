@@ -10,18 +10,19 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-		/>
-		<link rel="stylesheet" href="styles/style.css" />
-		<!-- <script
+		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-		<script src="scripts/javascript.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="styles/style.css" />
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,10 +31,7 @@
 			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Montserrat&family=Open+Sans+Condensed:wght@300&Crimson+Pro:wght@200&display=swap"
 			rel="stylesheet"
 		/>
-		<!-- font-family: 'Manrope', sans-serif;
-		font-family: 'Montserrat', sans-serif;
-		font-family: 'Open Sans Condensed', sans-serif; -->
-		<title>Document</title>
+		<title>Dunder Mifflin - The People Person's Paper People</title>
 	</head>
 	<body>
 		<!-- Go to top button -->
@@ -51,41 +49,10 @@
 			class="carousel slide carousel-fade"
 			data-bs-ride="carousel"
 		>
-			<!-- Didn't use buttons beccause z-index -->
-			<!-- <div class="carousel-indicators">
-				<button
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide-to="0"
-					class="active"
-					aria-current="true"
-					aria-label="Slide 1"
-				></button>
-				<button
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide-to="1"
-					aria-label="Slide 2"
-				></button>
-				<button
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide-to="2"
-					aria-label="Slide 3"
-				></button>
-			</div> -->
 			<div class="carousel-inner">
-				<!-- <div class="carousel-item active">
-					<video autoplay loop muted class="d-block w-100 header_bg">
-						<source
-							src="videos/officecarouselvideo.mp4"
-							type="video/mp4"
-						/>
-					</video>
-				</div> -->
 				<div class="carousel-item active">
 					<img
-						src="images/4103879 (3).jpg"
+						src="images/4103879_(3).jpg"
 						class="d-block w-100 header_bg"
 						alt="1"
 					/>
@@ -121,14 +88,6 @@
 			</div>
 		</div>
 		<div class="empty">
-			<!-- <figure class="text-center">
-				<blockquote class="blockquote">
-					<p>A well-known quote, contained in a blockquote element.</p>
-				</blockquote>
-				<figcaption class="blockquote-footer">
-					Someone famous in <cite title="Source Title">Source Title</cite>
-				</figcaption>
-			</figure> -->
 			<h1>
 				<span
 					id="carousel_text"
@@ -139,14 +98,21 @@
 				<small class="mute_text h4">
 					Have a peek into this exuberant office that is Dunder Mifflin
 				</small>
-				<br /><a href="#main_body"
-					><button type="button" class="header btn-outline-dark">
-						Start
-					</button></a
+				<br />
+				<button
+					type="button"
+					class="header btn-outline-dark"
+					id="start_button"
 				>
+					Start
+				</button>
+				<script>
+					document.getElementById("start_button").onclick = function () {
+						location.href = "#main_body";
+					};
+				</script>
 			</h1>
 		</div>
-		<!-- <script src="scripts/javascript.js"></script> -->
 		<div class="wrapper">
 			<!-- NavBar -->
 			<nav
@@ -156,8 +122,7 @@
 					<a class="navbar-brand" href="#"
 						><img
 							src="images/1280px-Dunder_Mifflin,_Inc.svg.png"
-							alt=""
-							srcset=""
+							alt="logo"
 					/></a>
 					<button
 						class="navbar-toggler"
@@ -213,7 +178,6 @@
 									<li>
 										<a
 											class="dropdown-item disabled"
-											href="#"
 											aria-disabled="true"
 											>To be Added</a
 										>
@@ -239,18 +203,18 @@
 				</div>
 			</nav>
 			<main id="main_body">
-				<div id="main_body">
+				<div class="main_body">
 					<!-- About -->
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-lg-4" data-aos="fade-right">
 								<img
 									class="img-fluid"
 									src="images/paper_boxes.jpg"
 									alt="qwerty"
 								/>
 							</div>
-							<div class="col-lg-8">
+							<div class="col-lg-8" data-aos="fade-up">
 								<p class="h4" id="peopleperson">
 									The People Person's Paper People
 								</p>
@@ -266,23 +230,34 @@
 								</p>
 
 								<p id="read_more">
-									<a href="pages/services.html"
-										><button class="main">Read More</button></a
+									<button
+										type="button"
+										class="main"
+										id="read_more_button"
 									>
+										Read More
+									</button>
+									<script>
+										document.getElementById(
+											"read_more_button"
+										).onclick = function () {
+											location.href = "pages/services.html";
+										};
+									</script>
 								</p>
 							</div>
 						</div>
 					</div>
 
-					<!-- The circular photos thingy(Square photos REQD) -->
+					<!-- The circular photos thingy -->
 					<div class="container" id="circular_photos">
-						<div class="row">
+						<div class="row" data-aos="fade-down">
 							<div class="col text-center" id="why">
 								<h1>Why choose Dunder Mifflin?</h1>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-4" id="why_dunder">
+							<div class="col-lg-4 why_dunder" data-aos="fade-up">
 								<a href="pages/team.html">
 									<img
 										class="rounded-circle"
@@ -293,7 +268,7 @@
 									We have a top tier team
 								</h3>
 							</div>
-							<div class="col-lg-4" id="why_dunder">
+							<div class="col-lg-4 why_dunder" data-aos="fade-up">
 								<a href="pages/contact.html">
 									<img
 										class="rounded-circle"
@@ -304,7 +279,7 @@
 									Our care for our customers
 								</h3>
 							</div>
-							<div class="col-lg-4" id="why_dunder">
+							<div class="col-lg-4 why_dunder" data-aos="fade-up">
 								<a href="#pricing_heading">
 									<img
 										class="rounded-circle"
@@ -335,14 +310,20 @@
 									Please give us a call! We would love to hear from
 									you!
 								</p>
-								<a href="pages/contact.html"
-									><button
-										class="header btn-outline-light"
-										id="contact_us"
-									>
-										Contact Us
-									</button></a
+
+								<button
+									type="button"
+									class="header btn-outline-light"
+									id="contact_us"
 								>
+									Contact Us
+								</button>
+								<script>
+									document.getElementById("contact_us").onclick =
+										function () {
+											location.href = "pages/contact.html";
+										};
+								</script>
 							</div>
 						</div>
 					</section>
@@ -350,14 +331,13 @@
 					<!-- Pricing -->
 					<div class="container">
 						<div class="row" id="pricing">
+							<span class="lead text-center pricing_heading">
+								At Dunder Mifflin, we have an exhaustive repertoire of
+								paper and printing needs, each of them specifically
+								picked to tailor towards all types of businesses!
+							</span>
+							<br /><br />
 							<h2 class="text-center" id="pricing_heading">
-								<div class="lead">
-									At Dunder Mifflin, we have an exhaustive repertoire
-									of paper and printing needs, each of them
-									specifically picked to tailor towards all types of
-									businesses!
-								</div>
-								<br /><br />
 								Compare Our Plans
 							</h2>
 							<div class="col-md-4 col-sm-6">
@@ -371,16 +351,16 @@
 									</div>
 									<div class="content">
 										<ul>
-											<li>Aida dere</li>
-											<li>Nec feugiat nisl</li>
-											<li>ulla at volutpat dola</li>
-											<li>
-												<del class="text-muted">Pharetra massa</del>
-											</li>
+											<li>24/7 Customer Support</li>
+											<li>Excellent Quality Paper</li>
+											<li>Affordable Prices</li>
 											<li>
 												<del class="text-muted"
-													>Massa ultricies mi</del
+													>Personal Support</del
 												>
+											</li>
+											<li>
+												<del class="text-muted">Bulk Discount</del>
 											</li>
 										</ul>
 										<div class="link">
@@ -401,14 +381,12 @@
 									</div>
 									<div class="content">
 										<ul>
-											<li>Aida dere</li>
-											<li>Nec feugiat nisl</li>
-											<li>ulla at volutpat dola</li>
-											<li>Pharetra massa</li>
+											<li>24/7 Customer Support</li>
+											<li>Excellent Quality Paper</li>
+											<li>Affordable Prices</li>
+											<li>Personal Support</li>
 											<li>
-												<del class="text-muted"
-													>Massa ultricies mi</del
-												>
+												<del class="text-muted">Bulk Discount</del>
 											</li>
 										</ul>
 										<div class="link">
@@ -428,11 +406,11 @@
 									</div>
 									<div class="content">
 										<ul>
-											<li>Aida dere</li>
-											<li>Nec feugiat nisl</li>
-											<li>ulla at volutpat dola</li>
-											<li>Pharetra massa</li>
-											<li>Massa ultricies mi</li>
+											<li>24/7 Customer Support</li>
+											<li>Excellent Quality Paper</li>
+											<li>Affordable Prices</li>
+											<li>Personal Support</li>
+											<li>Bulk Discount</li>
 										</ul>
 										<div class="link">
 											<a href="#">sign up</a>
@@ -671,23 +649,6 @@
 							</table>
 						</div>
 					</div>
-
-					<!-- <div class="container">
-					<div class="row">
-						<div class="col-lg-6 mb-3">
-							<img src="images/square0.png" alt="qwerty" />
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-						<div class="col-lg-6 mb-3">
-							<img src="images/square1.jpg" alt="qwerty" />
-							<h3 class="mb-3 text-center">
-								Lorem ipsum dolor sit amet.
-							</h3>
-						</div>
-					</div>
-				</div> -->
 				</div>
 			</main>
 			<!-- Footer -->
@@ -764,7 +725,7 @@
 
 					<!-- Form -->
 					<section class="footer">
-						<form action="">
+						<form>
 							<div class="row d-flex justify-content-center">
 								<div class="col-auto">
 									<p class="pt-2">
@@ -794,13 +755,10 @@
 					</section>
 					<section class="mb-4" id="footer_text">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Sunt distinctio earum repellat quaerat voluptatibus placeat
-							nam, commodi optio pariatur est quia magnam eum harum
-							corrupti dicta, aliquam sequi voluptate quas.
+							There’s a lot of beauty in ordinary things. Isn’t that kind
+							of the point? - Pam Beesly
 						</p>
 					</section>
-					<!-- Map -->
 					<section class="">
 						<div class="row">
 							<!-- Links -->
@@ -808,7 +766,7 @@
 								class="col-lg-12 col-md-12 mb-4 mb-md-0"
 								id="footer_links"
 							>
-								<h5 class="text-uppercase">Links</h5>
+								<h5 class="text-uppercase">Dunder Mifflin</h5>
 								<ul class="list-unstyled mb-0" id="links">
 									<li>
 										<a href="#" class="text-white"> Home </a>
@@ -851,11 +809,6 @@
 				</div>
 			</footer>
 		</div>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-			crossorigin="anonymous"
-		></script>
 		<script src="scripts/carousel_quotes.js"></script>
 		<script src="scripts/javascript.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

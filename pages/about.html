@@ -10,10 +10,18 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<link rel="stylesheet" href="../styles/style.css" />
 
 		<!-- Google Fonts -->
@@ -45,8 +53,7 @@
 					<a class="navbar-brand" href="../index.html"
 						><img
 							src="../images/1280px-Dunder_Mifflin,_Inc.svg.png"
-							alt=""
-							srcset=""
+							alt="logo"
 					/></a>
 					<button
 						class="navbar-toggler"
@@ -95,7 +102,6 @@
 									<li>
 										<a
 											class="dropdown-item disabled"
-											href="#"
 											aria-disabled="true"
 											>To be Added</a
 										>
@@ -116,11 +122,11 @@
 					</div>
 				</div>
 			</nav>
-			<div id="main_body">
+			<div class="main_body">
 				<!-- About -->
 				<div class="container" id="about">
-					<div class="row">
-						<h1>
+					<div class="row" data-aos="fade-up">
+						<h1 class="text-center">
 							About Us<br />
 							<small class="text-muted h4"
 								>Learn more about the leading paper industry</small
@@ -129,10 +135,10 @@
 						</h1>
 					</div>
 					<div class="row">
-						<div class="col-lg-8">
-							<p class="h4" id="about_headings">Humble Beginnings</p>
+						<div class="col-lg-8" data-aos="fade-up">
+							<p class="h4 about_headings">Humble Beginnings</p>
 							<br />
-							<p id="about_body">
+							<p class="about_body">
 								Dunder Mifflin was founded by Robert Dunder and Robert
 								Mifflin in 1949, after the two became close friends
 								studying together at Dartmouth College. Both had the
@@ -142,7 +148,7 @@
 								supply company.
 							</p>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-lg-4" data-aos="fade-left">
 							<img
 								class="img-fluid"
 								src="../images/largest-paper-companies.jpg"
@@ -151,31 +157,28 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-4">
+						<div class="col-lg-4" data-aos="fade-right">
 							<img
-								class="img-fluid"
+								class="img-fluid about"
 								src="../images/about_bldg.jpg"
 								alt="qwerty"
-								id="about"
 							/>
 						</div>
-						<div class="col-lg-8">
-							<p class="h4" id="about_headings">
-								We care for our family
-							</p>
+						<div class="col-lg-8" data-aos="fade-up">
+							<p class="h4 about_headings">We care for our family</p>
 							<br />
-							<p id="about_body">
+							<p class="about_body">
 								Today, Dunder Mifflin is a one stop shop for all your
 								paper and printing needs, from New York to the
 								Carolinas, and as far west as Indiana.
 							</p>
-							<p id="about_body">
+							<p class="about_body">
 								We have neither strayed away from nor forgotten our
 								humble beginnings, which why we like to take care of the
 								little guy, and boast over 500 small-business clients
 								averaging under 10 employees.
 							</p>
-							<p id="about_body">
+							<p class="about_body">
 								We provide our products and services with a dedication
 								to the highest degree of integrity and quality of
 								customer satisfaction, developing long-term professional
@@ -185,8 +188,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="row about-image-container" id="about-images">
-						<h1>
+					<div
+						class="row about-image-container about-images"
+						id="about-images"
+						data-aos="fade-down"
+					>
+						<h1 class="text-center">
 							<small class="text-muted h3"
 								>Have a taste of what's it like<br />living the American
 								Dream</small
@@ -195,7 +202,7 @@
 						</h1>
 					</div>
 					<div class="row about-image-container">
-						<div class="col-lg">
+						<div class="col-lg" data-aos="fade-up">
 							<video autoplay loop muted class="d-block w-100 zoom">
 								<source
 									src="../videos/officecarouselvideo.mp4"
@@ -205,124 +212,55 @@
 						</div>
 					</div>
 					<div class="row about-image-container">
-						<section id="about-images">
-							<img src="../images/5e780b3f58df7.image.jpg" alt="1" />
-							<img
-								src="../images/bee93e3b-4e98-4ace-a0f1-6cdc45f9d0c5-theoffice.jpg"
-								alt="2"
-							/>
-							<img src="../images/gen-z-and-the-office.jpg" alt="3" />
-							<img src="../images/GettyImages-138446688.jpg" alt="4" />
-							<img src="../images/GettyImages-138446881.jpg" alt="5" />
-							<img src="../images/GettyImages-141187160.jpg" alt="6" />
-							<img src="../images/GettyImages-141187390.jpg" alt="7" />
-							<img src="../images/image.jpeg" alt="8" srcset="" />
-							<img
-								src="../images/pam-beesly(about).jpg"
-								alt="9"
-								srcset=""
-							/>
-							<img src="../images/the-office-759 (1).jpg" alt="10" />
+						<section class="about-images">
+							<div data-aos="fade-right">
+								<img src="../images/5e780b3f58df7.image.jpg" alt="1" />
+							</div>
+							<div data-aos="fade-left">
+								<img
+									src="../images/bee93e3b-4e98-4ace-a0f1-6cdc45f9d0c5-theoffice.jpg"
+									alt="2"
+								/>
+							</div>
+							<div data-aos="fade-right">
+								<img src="../images/gen-z-and-the-office.jpg" alt="3" />
+							</div>
+							<div data-aos="fade-left">
+								<img
+									src="../images/GettyImages-138446688.jpg"
+									alt="4"
+								/>
+							</div>
+							<div data-aos="fade-right">
+								<img
+									src="../images/GettyImages-138446881.jpg"
+									alt="5"
+								/>
+							</div>
+							<div data-aos="fade-left">
+								<img
+									src="../images/GettyImages-141187160.jpg"
+									alt="6"
+								/>
+							</div>
+							<div data-aos="fade-right">
+								<img
+									src="../images/GettyImages-141187390.jpg"
+									alt="7"
+								/>
+							</div>
+							<div data-aos="fade-left">
+								<img src="../images/image.jpeg" alt="8" />
+							</div>
+							<div data-aos="fade-right">
+								<img src="../images/pam-beesly(about).jpg" alt="9" />
+							</div>
+							<div data-aos="fade-left">
+								<img src="../images/the-office-759_(1).jpg" alt="10" />
+							</div>
 						</section>
-						<!-- <div class="column" id="about">
-							<img
-								src="../images/5e780b3f58df7.image.jpg"
-								alt=""
-								srcset=""
-							/>
-							<img
-								src="../images/bee93e3b-4e98-4ace-a0f1-6cdc45f9d0c5-theoffice.jpg"
-								alt=""
-								srcset=""
-							/>
-							<img
-								src="../images/gen-z-and-the-office.jpg"
-								alt=""
-								srcset=""
-							/>
-							<img
-								src="../images/GettyImages-138446688.jpg"
-								alt=""
-								srcset=""
-							/>
-							<img
-								src="../images/GettyImages-138446881.jpg"
-								alt=""
-								srcset=""
-							/>
-							
-						</div>
-						<div class="column" id="about">
-							<img
-								src="../images/GettyImages-141187160.jpg"
-								alt=""
-								srcset=""
-							/>
-							<img
-								src="../images/GettyImages-141187390.jpg"
-								alt=""
-								srcset=""
-							/>
-							<img src="../images/image.jpeg" alt="" srcset="" />
-							<img src="../images/pam-beesly.jpg" alt="" srcset="" />
-							<img
-								src="../images/the-office-759 (1).jpg"
-								alt=""
-								srcset=""
-							/>
-						</div> -->
 					</div>
 				</div>
-				<!-- Services -->
-				<!-- <div class="container" id="services">
-					<div class="row">
-						<small class="text-muted h4">Services</small>
-					</div>
-					<div class="row">
-						<div class="col-lg-8">
-							<p class="h4">The People Person's Paper People</p>
-							<br />
-							<p>
-								Dunder Mifflin Inc.&trade; is a micro-cap regional paper
-								and office supply distributor with an emphasis on
-								servicing small-business clients. With a corporate
-								office in New York City, Dunder Mifflin has branches in
-								Buffalo, Albany, Utica, Scranton, Akron, Camden, Nashua
-								and Yonkers.
-							</p>
-						</div>
-						<div class="col-lg-4">
-							<img src="../images/paper_boxes.jpg" alt="qwerty" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4">
-							<img
-								src="../images/51MsmNjKcbL.jpg"
-								alt="qwerty"
-								id="about"
-							/>
-						</div>
-						<div class="col-lg-8">
-							<p class="h4">Our Mission Statement</p>
-							<br />
-							<p>
-								Dunder Mifflin Inc. provides its customers quality
-								office and information technology products, furniture,
-								printing values and the expertise required for making
-								informed buying choices.
-							</p>
-							<p>
-								We provide our products and services with a dedication
-								to the highest degree of integrity and quality of
-								customer satisfaction, developing long-term professional
-								relationships with employees that develop pride,
-								creating a stable working environment and company
-								spirit.
-							</p>
-						</div>
-					</div>
-				</div> -->
 			</div>
 			<!-- Footer -->
 			<footer class="card bg-dark text-center text-white">
@@ -398,7 +336,7 @@
 
 					<!-- Form -->
 					<section class="">
-						<form action="">
+						<form>
 							<div class="row d-flex justify-content-center">
 								<div class="col-auto">
 									<p class="pt-2">
@@ -428,13 +366,10 @@
 					</section>
 					<section class="mb-4" id="footer_text">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Sunt distinctio earum repellat quaerat voluptatibus placeat
-							nam, commodi optio pariatur est quia magnam eum harum
-							corrupti dicta, aliquam sequi voluptate quas.
+							There’s a lot of beauty in ordinary things. Isn’t that kind
+							of the point? - Pam Beesly
 						</p>
 					</section>
-					<!-- Map -->
 					<section class="">
 						<div class="row">
 							<!-- Links -->
@@ -442,7 +377,7 @@
 								class="col-lg-12 col-md-12 mb-4 mb-md-0"
 								id="footer_links"
 							>
-								<h5 class="text-uppercase">Links</h5>
+								<h5 class="text-uppercase">Dunder Mifflin</h5>
 								<ul class="list-unstyled mb-0" id="links">
 									<li>
 										<a href="../index.html" class="text-white">
