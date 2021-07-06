@@ -292,49 +292,54 @@
 											<div class="contact-wrap w-100 p-md-5 p-4">
 												<h3 class="mb-4">Or send us a message</h3>
 												<form
-													class="row g-3 needs-validation"
+													class="
+														row
+														g-3
+														needs-validation
+														contactForm
+													"
 													novalidate
 												>
-													<div class="col-md-4">
-														<label
+													<div class="col-md-4 form_group">
+														<!-- <label
 															for="validationCustom01"
 															class="form-label"
 															>First name</label
-														>
+														> -->
 														<input
 															type="text"
 															class="form-control"
 															id="validationCustom01"
-															value="Mark"
+															placeholder="First Name"
 															required
 														/>
 														<div class="valid-feedback">
 															Looks good!
 														</div>
 													</div>
-													<div class="col-md-4">
-														<label
+													<div class="col-md-4 form_group">
+														<!-- <label
 															for="validationCustom02"
 															class="form-label"
 															>Last name</label
-														>
+														> -->
 														<input
 															type="text"
 															class="form-control"
 															id="validationCustom02"
-															value="Otto"
+															placeholder="Last Name"
 															required
 														/>
 														<div class="valid-feedback">
 															Looks good!
 														</div>
 													</div>
-													<div class="col-md-4">
-														<label
+													<div class="col-md-4 form_group">
+														<!-- <label
 															for="validationCustomUsername"
 															class="form-label"
 															>Username</label
-														>
+														> -->
 														<div
 															class="input-group has-validation"
 														>
@@ -348,6 +353,7 @@
 																class="form-control"
 																id="validationCustomUsername"
 																aria-describedby="inputGroupPrepend"
+																placeholder="Username"
 																required
 															/>
 															<div class="invalid-feedback">
@@ -355,31 +361,33 @@
 															</div>
 														</div>
 													</div>
-													<div class="col-md-6">
-														<label
+													<div class="col-md-6 form_group">
+														<!-- <label
 															for="validationCustom03"
 															class="form-label"
 															>City</label
-														>
+														> -->
 														<input
 															type="text"
 															class="form-control"
 															id="validationCustom03"
+															placeholder="City"
 															required
 														/>
 														<div class="invalid-feedback">
 															Please provide a valid city.
 														</div>
 													</div>
-													<div class="col-md-3">
-														<label
+													<div class="col-md-3 form_group">
+														<!-- <label
 															for="validationCustom04"
 															class="form-label"
 															>State</label
-														>
+														> -->
 														<select
 															class="form-select"
 															id="validationCustom04"
+															aria-placeholder="State"
 															required
 														>
 															<option selected disabled value="">
@@ -391,23 +399,24 @@
 															Please select a valid state.
 														</div>
 													</div>
-													<div class="col-md-3">
-														<label
+													<div class="col-md-3 form_group">
+														<!-- <label
 															for="validationCustom05"
 															class="form-label"
 															>Zip</label
-														>
+														> -->
 														<input
 															type="text"
 															class="form-control"
 															id="validationCustom05"
+															placeholder="Zip"
 															required
 														/>
 														<div class="invalid-feedback">
 															Please provide a valid zip.
 														</div>
 													</div>
-													<div class="col-12">
+													<div class="col-12 form_group">
 														<div class="form-check">
 															<input
 																class="form-check-input"
@@ -428,7 +437,7 @@
 															</div>
 														</div>
 													</div>
-													<div class="col-12">
+													<div class="col-12 form_group">
 														<button
 															class="btn btn-primary"
 															type="submit"

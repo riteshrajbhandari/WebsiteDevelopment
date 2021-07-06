@@ -667,12 +667,12 @@ button.main:hover {
 	background: #2d9bb7 !important;
 }
 
-.contactForm .label {
+/* .contactForm .form-label {
 	color: #000;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 600;
-}
+} */
 
 .contactForm .form-control {
 	border: none;
@@ -682,7 +682,7 @@ button.main:hover {
 	padding: 5px 5px;
 }
 
-#contactForm .error {
+/* #contactForm .error {
 	color: red;
 	font-size: 12px;
 }
@@ -708,7 +708,7 @@ button.main:hover {
 	color: #28a745;
 	font-size: 18px;
 	font-weight: 500;
-}
+} */
 
 .submitting {
 	float: left;
@@ -718,8 +718,8 @@ button.main:hover {
 	font-size: 16px;
 	font-weight: bold;
 }
-.form-group {
-	padding-top: 30px;
+.form_group {
+	padding-top: 10px;
 }
 
 /* @media only screen and (min-width: 600px) {
