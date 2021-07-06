@@ -174,6 +174,14 @@ strong,
 	font-family: "Manrope", sans-serif;
 }
 
+#peopleperson_body,
+#about_body,
+.member-info p,
+#service_body {
+	font-family: "Crimson Pro", serif;
+	font-size: large;
+}
+
 .empty h1 {
 	font-size: 30pt;
 	padding-top: 5vw;
@@ -237,6 +245,9 @@ button.header {
 	outline: none;
 	border-radius: 4px;
 	z-index: auto;
+}
+button.header.btn-outline-light#contact_us {
+	font-weight: normal;
 }
 /* button.header:hover {
 	color: #001f3f;
@@ -826,7 +837,9 @@ h2 {
 	font-weight: 700;
 	color: rgb(126, 55, 55);
 	text-transform: uppercase;
+	text-decoration: none;
 	border: 1px solid rgb(128, 50, 50);
+	border-radius: 7%;
 	background: #fff;
 	transition: all 0.4s ease 0s;
 }
